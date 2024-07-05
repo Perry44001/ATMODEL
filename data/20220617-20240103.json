@@ -362,7 +362,7 @@
     {
         "instruction": "请问一下，krakenc函数比kraken函数多考虑了什么",
         "input": "",
-        "output": "而且求本征值的原理不同，考虑到了本征值为复数的求解，krakenc相对于kraken来说，多考虑了一些模式泄露。"
+        "output": "而且求本征值的原理不同，考虑到了本征值为复数的求解，krakenc相对于kraken来说，多考虑了一些模式泄露，比如说横波对简正波特征值的影响。"
     },
     {
         "instruction": "想请教各位，声学工具箱有没有现成的函数能够读取我们存入的.env文件里的配置？",
@@ -990,19 +990,88 @@
         "output": "对比过Couple和RAM，在低频结果基本一致，到1000Hz就只能说变化趋势一致了；不过1000Hz也有结果比较好的，看地形吧，下面这个是个波纹海底的结果，就比较接近；另外就是近场条件不同，这些图里我把近场差别较大的部分去掉了。如果每个模型都能自定义声源出射角的话那结果应该会更接近。"
     },
     {
-        "instruction": "1",
+        "instruction": "请问ram怎么运行加速呀？",
         "input": "",
-        "output": "2"
+        "output": "三维的话要不从N×2D的N那里并行，二维的话从有限差分的差分格式那里并行，如果是宽频信号的话，从N个频点那并行"
     },
     {
-        "instruction": "1",
+        "instruction": "请教一下我把教程里的env文件原样填进matlab里后运行kraken，然后报错了",
         "input": "",
-        "output": "2"
+        "output": "flp文件也得复制进去，运行kraken需要env和flp两个文件"
     },
     {
-        "instruction": "1",
+        "instruction": "大佬们，请教一下如何从水听器阵列接收的声信号计算传播损失啊？",
         "input": "",
-        "output": "2"
+        "output": "理论上算一下声源级和接收信号级，减一下就得到传播损失"
+    },
+    {
+        "instruction": "传播损失需要减去噪声级吗？",
+        "input": "",
+        "output": "传播损失不用考虑噪声级的。"
+    },
+    {
+        "instruction": "请问传播损失和声压级之间是什么关系呢？",
+        "input": "",
+        "output": "声压级是把声压的幅度按照dB显示的，把声源的声压级和接收位置的声压级减一下就得到了传播损失，要是想获得接收位置的声压级，直接声源声压级减去损失就OK"
+    },
+    {
+        "instruction": "各位大佬，问个问题，下面这两个图是同一个环境下的水平传播损失，上图的接收点NRD设置的是1001个，下面的是101个，下图的毛刺明显比上图要多，请问这两张图有对错之分吗",
+        "input": "",
+        "output": "我认为这是计算的深度网格粗细产生的表达效果不同，不是对错的问题，但有人说上面的图毛刺太多肯定是错的，我并不认可。"
+    },
+    {
+        "instruction": ".arr文件里面的参数是什么意思 哪里的说明书有讲吗？",
+        "input": "",
+        "output": "声线的到达幅度与时延等信息，推荐一本西北工业大学的杨坤德老师的 书，叫《海洋声学典型声场模型的原理及应用》，里边很详细地讲了这些"
+    },
+    {
+        "instruction": ".bty和.ati文件会影响bellhop生成的arr文件吗",
+        "input": "",
+        "output": "你可以理解为海面和海底形状，影响声线传播的，进而影响生成的.arr文件。"
+    },
+    {
+        "instruction": "bellhop3d有教程吗？",
+        "input": "",
+        "output": "请看教程：【13Bellhop3D入门】 https://www.bilibili.com/video/BV1Gg4y1X7TK/?share_source=copy_web"
+    },
+    {
+        "instruction": "请问59-60行分别代表了什么？谢谢'MS' 0.3 100.0 !BeamType,epmult,Rloop(km)\n 1 5 'P' !NImage IBWin",
+        "input": "",
+        "output": "选中心射线声压计算时的两行参量。"
+    },
+    {
+        "instruction": "利用温盐深算出来的SSP没有到海底应该如何补全比较准确",
+        "input": "",
+        "output": "如果这个区域是深海等温层，其声速随着海深增大几乎是线性增大的，推荐使用线性外插法补全；如果这个区域是浅海，则可以使用最近邻外插，即使用最深处的声速补全。"
+    },    {
+        "instruction": "求问各位大佬，kraken的env文件中的海深的三个值，必须一致吗？我遇到的问题是实际海底可能在147m深，但是声速剖面只测到水下143m",
+        "input": "",
+        "output": "海深、声速剖面深度和第二层介质起始深度必须一致，如果不一致可能会导致kraken无法运行，如果声速剖面只测到水下143m，可以使用线性最近邻外插法得到147m的声速，即使用143m的声速数据作为147m的声速。"
+    },
+    {
+        "instruction": "ram中的声速剖面是如何定义的？",
+        "input": "",
+        "output": "根据剖面进行插值，cw  cb  rho attn都是从0到zmax线性插值，得到四条曲线，然后根据深度z关系形成一个完整的剖面，再做计算，所以z应该就是表示插值深度，值得注意的是ram不能修改水中的rho和attn。"
+    },
+    {
+        "instruction": "请问大家有没有给kraken生成数据加噪的方法，频域上的？",
+        "input": "",
+        "output": "频率上加噪的话和时域上加噪是一样的，按照指定的信噪比加指定方差的高斯噪声randn就行了。"
+    },
+    {
+        "instruction": "请问大家，吸收损失单位中'F'所用单位跟dB/m/kHz是一样的吗？",
+        "input": "",
+        "output": "F指与频率相关(Freq.dependent)，单位dB/(kmHz)=dB/(mkHz)，是一样的"
+    },
+    {
+        "instruction": "bellhop有图文教程吗？",
+        "input": "",
+        "output": "请看这个教程【Bellhop 从入门到上手】https://blog.csdn.net/qq_41839588/article/details/130955558"
+    },
+    {
+        "instruction": "请问kraken输入声速剖面z()深度取值可以不是整数吗？",
+        "input": "",
+        "output": "可以。"
     },
     {
         "instruction": "1",
