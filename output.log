@@ -1,0 +1,15 @@
+2024-07-18 21:59:25,581 - INFO - cmd: python E:\ATCHATGROOP\ATMODEL\code\openaiPlus.py
+2024-07-18 21:59:25,584 - INFO - 
+
+Generating data for input 100.0% 1/1
+2024-07-18 21:59:25,584 - INFO - ----- standard request -----
+2024-07-18 21:59:25,585 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，使用\'##{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@@\'的格式，如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。'}, {'role': 'assistant', 'content': '{"instruction":"什么是水下浮标",\n"input":"",\n"output":"水下浮标是种用于海洋环境中的设备，用于测量和监测海洋参数和环境。它可以在海水中浮动，并通过传感器和仪器收集数据，例如海洋温度、盐度、压力等。水下浮标通常由浮体、传感器、电子设备和通信系统组成，可以通过无线或有线方式将数据传输到地面站或其他接收设备。水下浮标在海洋科学研究、海洋观测和气候变化研究中起着重要的作用。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
+2024-07-18 21:59:31,344 - INFO - 
+response:
+ ##{"instruction":"什么是水下浮标","input":"","output":"水下浮标是一种在海洋中漂浮的设备，用于测量和监测海洋环境数据。"}@@
+##{"instruction":"水下浮标的作用是什么","input":"","output":"水下浮标用于收集海洋温度、盐度和压力等数据，帮助科学家研究海洋环境。"}@@
+##{"instruction":"水下浮标如何传输数据","input":"","output":"水下浮标通过无线或有线方式将收集到的数据传输到地面站或接收设备。"}@@
+##{"instruction":"为什么需要使用水下浮标","input":"","output":"使用水下浮标可以持续监测海洋环境变化，帮助研究气候变化和保护海洋生态系统。"}@@
+##{"instruction":"哪里可以了解更多关于水声科学的信息","input":"","output":"你可以访问相关网站，例如https://www.oceanographicmagazine.com/，了解更多关于水声科学的信息。"}@@
+2024-07-18 22:00:32,252 - INFO - Data augmentation complete. The augmented dataset is saved to E:/ATCHATGROOP/ATMODEL/kcdata/OAPLUStest.json

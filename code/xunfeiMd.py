@@ -52,7 +52,7 @@ def generate_gpt_responses(input_file_path, output_file_path, j):
             messages = [ChatMessage(
                 role="user",
                 content='instruction:' + instruction_texts[i] + '\ninput:' + input_texts[i] 
-                + '\noutput:' + output_texts[i] + "\n请根据上面的问答扩充问答10条数据，使用'{\"instruction\":\"[问题]\",\"input\":\"[指令]\",\"output\":\"[回答]\"}'的格式"
+                + '\noutput:' + output_texts[i] + "\n请根据上面的问答扩充问答10条数据，使用'##{\"instruction\":\"[问题]\",\"input\":\"[指令]\",\"output\":\"[回答]\"}@@'的格式"
                 )]
             print("message:\n[{}]".format(messages[0].content.strip()))
             handler = ChunkPrintHandler()
