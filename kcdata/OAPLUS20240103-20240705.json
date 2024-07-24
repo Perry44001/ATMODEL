@@ -1320,7 +1320,7 @@
     {
         "instruction": "如何选择合适的水下声传播模型？",
         "input": "",
-        "output": "选择合适的模型取决于你需要研究的问题，比如精度要求、计算资源等。如果需要详细信息，可以参考相关教程：https://example.com/tutorial"
+        "output": "选择合适的模型取决于你需要研究的问题，比如精度要求、计算资源等。具体请见链接：https://gitee.com/open-ocean/Underwater-Target-Recognition/blob/master/HTSLM/howtoSlctModel.png"
     }
 ],
 [
@@ -1604,7 +1604,7 @@
     {
         "instruction": "什么是“C”模式和“A”模式，它们在bellhop中的作用是什么？",
         "input": "",
-        "output": "“C”模式用于计算点对点的传播损失，而“A”模式用于计算整个区域内的声场分布。两者都可以用来分析不同接收点处的声压情况。详情请参考：https://oalib-acoustics.org/AcousticsToolbox/index.html"
+        "output": "“C”模式用于计算相干声压或者传播损失，而“A”模式用于计算到达结构。两者都可以用来分析不同接收点处的接收信号。"
     }
 ],
 [

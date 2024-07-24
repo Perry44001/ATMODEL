@@ -52,7 +52,7 @@
     {
         "instruction": "plotshd MunKK.shd.mat，plotshd是matlab提供的函数吗",
         "input": "",
-        "output": "plotshd 不是 MATLAB 自带的函数，它通常用于绘制声压文件（.shd.mat）的传播损失图。"
+        "output": "plotshd 不是 MATLAB 自带的函数，是声学工具箱提供的函数，它通常用于绘制声压文件（.shd.mat）的传播损失图。"
     },
     {
         "instruction": "什么是水声传播损失？",
@@ -77,7 +77,7 @@
     {
         "instruction": "在哪里可以找到更多关于 plotshd 函数的信息？",
         "input": "",
-        "output": "你可以在相关的科研论文或 MATLAB 社区论坛上找到更多关于 plotshd 函数的信息。"
+        "output": "你可以在 声学工具箱 找到更多关于 plotshd 函数的信息，或者直接打开open plotshd.m来检查其源代码。"
     }
 ],
 [
@@ -195,12 +195,12 @@
 ],
 [
     {
-        "instruction": "如何读出波数吗",
+        "instruction": "如何读出波数",
         "input": "",
         "output": "使用read_modes函数可以读取波数等参数，但仅限于kraken运行成功，存在.mod文件（简正波模型才有波数的概念），代码\n[ Modes ] = read_modes( filename, freq );\n读取成功后Modes.k即为水平波数。"
     },
     {
-        "instruction": "如何读出波数吗",
+        "instruction": "如何读出简正波波数",
         "input": "",
         "output": "你可以使用read_modes函数来读取波数等参数，但前提是kraken运行成功并且存在.mod文件。代码如下：[ Modes ] = read_modes( filename, freq ); 读取成功后，Modes.k即为水平波数。"
     },
@@ -249,7 +249,7 @@
     {
         "instruction": "在哪里可以找到更多关于kraken程序的信息？",
         "input": "",
-        "output": "你可以访问这个链接获取更多信息：http://oalib.hlsresearch.com/Rays/index.html"
+        "output": "你可以访问这个链接获取更多信息：【声学工具箱学习2020-11版本】 https://www.bilibili.com/video/BV12W4y1Q7pQ/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
     }
 ],
 [
@@ -833,17 +833,17 @@
     {
         "instruction": "有人知道，KRAKEN怎样获得每个水听器接收到的时域波形吗",
         "input": "",
-        "output": "可以查一下《计算海洋声学》（《Computational Ocean Acoustics》）第八章傅里叶合成法，网址https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf。"
+        "output": "可以查一下《计算海洋声学》（《Computational Ocean Acoustics》）第八章傅里叶合成法，网址https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf，代码：https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/ArrayTime-domainWaveformSignalSimulation/SonarReceivedSignalSImulatedbyKRAKEN。"
     },
     {
         "instruction": "如何用KRAKEN仿真得到水听器接收到的时域波形？",
         "input": "",
-        "output": "你可以通过KRAKEN仿真得到格林函数pressure，然后进行反傅里叶变换得到时域宽带海洋声信道。详细教程见：https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf"
+        "output": "你可以通过KRAKEN仿真得到格林函数pressure，然后进行反傅里叶变换得到时域宽带海洋声信道。详细教程见：https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf， 第八章傅里叶合成法，代码：https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/ArrayTime-domainWaveformSignalSimulation/SonarReceivedSignalSImulatedbyKRAKEN"
     },
     {
         "instruction": "有没有简单的方法用KRAKEN获取水听器的时域波形？",
         "input": "",
-        "output": "你可以先用KRAKEN仿真得到声场，然后通过反傅里叶变换将其转换为时域波形。具体步骤参考：https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf"
+        "output": "你可以先用KRAKEN仿真得到声场，然后通过反傅里叶变换将其转换为时域波形。具体步骤参考：https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf 第八章傅里叶合成法，代码：https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/ArrayTime-domainWaveformSignalSimulation/SonarReceivedSignalSImulatedbyKRAKEN"
     }
 ],
 [
@@ -1545,7 +1545,7 @@
     {
         "instruction": "如何使用plotshd工具？",
         "input": "",
-        "output": "你可以通过输入相关参数来生成声传播损失的二维分布图，从而直观地看到声音能量在水中的变化情况。详细教程请参考：https://example.com/plotshd-tutorial"
+        "output": "你可以通过输入相关参数来生成声传播损失的二维分布图，从而直观地看到声音能量在水中的变化情况。具体请见：【声学工具箱学习2020-11版本】 【精准空降到 32:16】 https://www.bilibili.com/video/BV12W4y1Q7pQ/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2&t=1936"
     },
     {
         "instruction": "plottlr和plottld有什么区别？",
@@ -2106,7 +2106,7 @@
 ],
 [
     {
-        "instruction": "你好，请问这个文档是什么呀，可以分享一份吗 这个问题是？？",
+        "instruction": "你好，BELLHOP 手册和用户指南（中文版）可以分享一份吗？",
         "input": "",
         "output": "https//blog.csdn.net/suiranyou2/article/details/129236257"
     },
@@ -2136,7 +2136,7 @@
         "output": "可以通过改进船只设计和使用更安静的推进系统来减少噪音。"
     },
     {
-        "instruction": "在哪里可以找到更多关于水声学的信息？",
+        "instruction": "在哪里可以找到更多关于bellhop用法的信息？",
         "input": "",
         "output": "你可以访问这个链接了解更多：https://blog.csdn.net/suiranyou2/article/details/129236257"
     }
@@ -2226,7 +2226,7 @@
     {
         "instruction": "如何使用kraken进行水声仿真？",
         "input": "",
-        "output": "你可以参考详细教程：https://example.com/kraken-tutorial"
+        "output": "你可以参考详细教程：【声学工具箱学习2020-11版本】 【精准空降到 14:41】 https://www.bilibili.com/video/BV12W4y1Q7pQ/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2&t=881"
     },
     {
         "instruction": "什么是RAM模型？",
@@ -2716,7 +2716,7 @@
     {
         "instruction": "如何使用bellhop进行简单的声场计算？",
         "input": "",
-        "output": "你可以通过编写一个输入文件来定义声源、接收器和环境参数，然后运行bellhop程序。详细教程可以参考：https://oalib-acoustics.org/AcousticsToolbox/index.html"
+        "output": "你可以通过编写一个输入文件来定义声源、接收器和环境参数，然后运行bellhop程序。详细教程可以参考：【声学工具箱学习2020-11版本】 【精准空降到 29:24】 https://www.bilibili.com/video/BV12W4y1Q7pQ/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2&t=1764"
     },
     {
         "instruction": "为什么在水下声音传播时会有多路径效应？",
@@ -3275,7 +3275,7 @@
 ],
 [
     {
-        "instruction": "1问大家一个问题，bellhop 总是提示我超出范围。我把ssp 的第一列的距离设置为-2.0 (km)，它这里就是 稍微超出一点点，然后就报错 。设置成-1.0(km), 它也是稍微超出一点点，然后报错 ",
+        "instruction": "问大家一个问题，bellhop 总是提示我超出范围。我把ssp 的第一列的距离设置为-2.0 (km)，它这里就是 稍微超出一点点，然后就报错 。设置成-1.0(km), 它也是稍微超出一点点，然后报错 ",
         "input": "",
         "output": " Quadray is outside the box where the soundspeed is defined，可以尽可能设置大一些，以超过声线可能到达的区域"
     }
@@ -4098,12 +4098,12 @@
 ],
 [
     {
-        "instruction": "求助各位大哥，bellhop出现这样的报错，有可能是输入啥东西冲突了呢\nBathymetry drops belowlowest point in the sound speed profile",
+        "instruction": "求助，bellhop出现这样的报错，有可能是输入啥东西冲突了呢\nBathymetry drops belowlowest point in the sound speed profile",
         "input": "",
         "output": "最深海深比你定义的声速剖面更深，导致他不知道下方的海水声速该取什么值，您可以检查海深和声速剖面的定义是否一致。"
     },
     {
-        "instruction": "求助各位大哥，bellhop出现这样的报错，有可能是输入啥东西冲突了呢 Bathymetry drops below lowest point in the sound speed profile",
+        "instruction": "求助，bellhop出现这样的报错，有可能是输入啥东西冲突了呢 Bathymetry drops below lowest point in the sound speed profile",
         "input": "",
         "output": "最深海深比你定义的声速剖面更深，导致他不知道下方的海水声速该取什么值，您可以检查海深和声速剖面的定义是否一致。"
     },
@@ -4157,7 +4157,7 @@
     {
         "instruction": "哪里有海洋环境噪声数据可以下载吗？",
         "input": "",
-        "output": "这里面似乎有一些公开数据：https://oalib-acoustics.org/experiments-data/。"
+        "output": "这里面有一些公开数据：https://oalib-acoustics.org/experiments-data/。"
     },
     {
         "instruction": "为什么鲸鱼能在很远的距离交流？",
@@ -6325,11 +6325,6 @@
     }
 ],
 [
-    {
-        "instruction": "1",
-        "input": "",
-        "output": "2"
-    },
     {
         "instruction": "水声科学是什么？",
         "input": "",

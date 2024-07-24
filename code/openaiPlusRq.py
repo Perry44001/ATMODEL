@@ -71,11 +71,11 @@ def generate_gpt_responses(input_file_path, output_file_path, j):
             data={
                 "model": "gpt-4o",
                 "messages": [
-                    {"role": "user", "content": "我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，使用'##{\"instruction\":\"[问题]\",\"input\":\"[指令]\",\"output\":\"[回答]\"}@@'的格式，如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。"},
+                    {"role": "user", "content": '''我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'''},
                     {
                     "role": "assistant",
-                    "content": "{\"instruction\":\"" + instruction_texts[i] + "\",\n\"input\":\"\"" + input_texts[i] 
-                        + ",\n\"output\":\"" + output_texts[i] + "\"}\n",
+                    "content": '{"instruction":"' + instruction_texts[i] + '","input":""' + input_texts[i] 
+                        + ',"output":"' + output_texts[i] + '"}',
                     },
                             ],
                 "temperature": 0.8,
@@ -95,7 +95,7 @@ def generate_gpt_responses(input_file_path, output_file_path, j):
             # pattern = r'\{"instruction":"([^}]*)\"\}'
             # pattern = r'\{"instruction":"(.*?)"\}'
             # pattern = r'##\{"instruction":"(.*?)"\}@@'
-            pattern = r'##(.*?)@@'
+            pattern = r'#*%(.*?)@~*'
 
             matches = re.findall(pattern, output)
             # 我们将每个扩充后的结果放在一个list
