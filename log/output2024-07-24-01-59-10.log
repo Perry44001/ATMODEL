@@ -131,7 +131,7 @@ response:
 Generating data for input 7.6% 6/79
 2024-07-24 02:00:30,083 - INFO - ----- standard request -----
 2024-07-24 02:00:30,085 - INFO - message:
- {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"env顶部参数（Top option）为\'NVM~\'，这个\'~\'和\'*\'是不是等价的？",\n"input":"",\n"output":"是的。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"env顶部参数（Top option）为'NVM~'，这个'~'和'*'是不是等价的？",\n"input":"",\n"output":"是的。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
 2024-07-24 02:00:34,120 - INFO - 
 response:
  明白了，我会根据你的要求进行扩展和解释。以下是一个示例：
@@ -307,12 +307,9 @@ response:
 
 #*%{"instruction":"有没有免费的平台提供特定海域的声速剖面数据？","input":"","output":"是的，有免费的平台提供这些数据。例如，Copernicus Marine Environment Monitoring Service (CMEMS) 提供了免费的全球物理海洋学数据，包括温度、盐度和深度，这些都可以用于计算声速剖面。你可以通过以下链接访问：https://data.marine.copernicus.eu/login?redirect=%2Fproduct%2FGLOBAL_MULTIYEAR_PHY_001_030%2Fdownload%3Fdataset%3Dcmems_mod_glo_phy_my_0.083_P1D-m"}@~*
 
-#*%
-{"instruction":"如何利用Argo计划的数据来获取某个区域的声速剖面？",
+#*%{"instruction":"如何利用Argo计划的数据来获取某个区域的声速剖面？",
 "input":"",
-"output":"Argo计划通过在全球范围内布放漂流浮标来收集温度、盐度和深度等信息。这些信息被上传到公共数据库，你可以从中下载并使用公式计算出该区域的声速剖面。具体步骤如下：\n1. 访问Argo数据库或Copernicus Marine Environment Monitoring Service (CMEMS) 网站。\n2. 登录并选择所需的数据集。\n3. 下载包含温度、盐度和深度信息的数据。\n4. 使用公式 \(C = 1449 + 4.6T - 0.055T^2 + 0.00029T^3 + (1.34 - 0.01T)(S - 35) + 0.016z\) 来计算不同深度下的声速，其中 \(C\) 是声速，\(T\) 是温度（摄氏），\(S\) 是盐度（PSU），\(z\) 是深度（米）。\n\n访问链接：https://data.marine.copernicus.eu/login?redirect=%2Fproduct%2FGLOBAL_MULTIYEAR_PHY_001_030%
-		download % 3 Fdataset % 3 Dcmems_mod_glo_phy_my_
-		0 .083 _P1 D - m"} @ ~ *
+"output":"Argo计划通过在全球范围内布放漂流浮标来收集温度、盐度和深度等信息。这些信息被上传到公共数据库，你可以从中下载并使用公式计算出该区域的声速剖面。具体步骤如下：\n1. 访问Argo数据库或Copernicus Marine Environment Monitoring Service (CMEMS) 网站。\n2. 登录并选择所需的数据集。\n3. 下载包含温度、盐度和深度信息的数据。\n4. 使用公式 \(C = 1449 + 4.6T - 0.055T^2 + 0.00029T^3 + (1.34 - 0.01T)(S - 35) + 0.016z\) 来计算不同深度下的声速，其中 \(C\) 是声速，\(T\) 是温度（摄氏），\(S\) 是盐度（PSU），\(z\) 是深度（米）。\n\n访问链接：https://data.marine.copernicus.eu/login?redirect=%2Fproduct%2FGLOBAL_MULTIYEAR_PHY_001_030%2Fdownload%3Fdataset%3Dcmems_mod_glo_phy_my_0.083_P1D-m"}@~*
 2024-07-24 02:01:52,397 - INFO - 
 
 Generating data for input 15.2% 12/79
@@ -1507,7 +1504,7 @@ response:
 Generating data for input 60.8% 48/79
 2024-07-24 02:12:50,420 - INFO - ----- standard request -----
 2024-07-24 02:12:50,421 - INFO - message:
- {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"如果BELLHOP环境文件里BOTTOM OPTION设置为\'R\',转换为RAM的输入文件时，应该怎么体现呢？",\n"input":"",\n"output":"可以把海底的声速和密度设置大一些，比如说cb = 15000，rhob=15这样试一下"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"如果BELLHOP环境文件里BOTTOM OPTION设置为'R',转换为RAM的输入文件时，应该怎么体现呢？",\n"input":"",\n"output":"可以把海底的声速和密度设置大一些，比如说cb = 15000，rhob=15这样试一下"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
 2024-07-24 02:13:12,047 - INFO - 
 response:
  #*%{"instruction":"如果BELLHOP环境文件里BOTTOM OPTION设置为'R',转换为RAM的输入文件时，应该怎么体现呢？",
@@ -1671,7 +1668,7 @@ response:
 Generating data for input 68.4% 54/79
 2024-07-24 02:14:35,179 - INFO - ----- standard request -----
 2024-07-24 02:14:35,180 - INFO - message:
- {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"为什么在深海会聚区用BELLHOP仿真得到的arr画图结果上看，多径反而不明显了，只剩下主达径，其它路径的幅值几乎为0，不应该会聚区多径效应更强吗？",\n"input":"",\n"output":"可能是因为它默认是用几何波束，严格限制了波束的宽度，到达时间相近的忽略了，你设置换成高斯的，即runtype的第二个字符改为\'B\'，也许能发现到达径变多。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"为什么在深海会聚区用BELLHOP仿真得到的arr画图结果上看，多径反而不明显了，只剩下主达径，其它路径的幅值几乎为0，不应该会聚区多径效应更强吗？",\n"input":"",\n"output":"可能是因为它默认是用几何波束，严格限制了波束的宽度，到达时间相近的忽略了，你设置换成高斯的，即runtype的第二个字符改为'B'，也许能发现到达径变多。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
 2024-07-24 02:15:02,134 - INFO - 
 response:
  #*%{"instruction":"为什么在深海会聚区用BELLHOP仿真得到的arr画图结果上看，多径反而不明显了，只剩下主达径，其它路径的幅值几乎为0，不应该会聚区多径效应更强吗？",
@@ -1786,7 +1783,7 @@ response:
 Generating data for input 73.4% 58/79
 2024-07-24 02:15:53,827 - INFO - ----- standard request -----
 2024-07-24 02:15:53,829 - INFO - message:
- {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"请问大家，这是我下载的一个计算传播损失的模型，编译makefile的时候会提示错误，makefile里不应该是依赖moatl.o来生成moatl.out吗？为什么会提示make :Yo rule to make targetmoatl.o\', needed by \'moatl.out\' Stop.",\n"input":"",\n"output":"可能是没有权限，可以试着使用sodu make提供管理员权限。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"请问大家，这是我下载的一个计算传播损失的模型，编译makefile的时候会提示错误，makefile里不应该是依赖moatl.o来生成moatl.out吗？为什么会提示make :Yo rule to make targetmoatl.o', needed by 'moatl.out' Stop.",\n"input":"",\n"output":"可能是没有权限，可以试着使用sodu make提供管理员权限。"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
 2024-07-24 02:16:04,780 - INFO - 
 response:
  #*%{"instruction":"请问大家，这是我下载的一个计算传播损失的模型，编译makefile的时候会提示错误，makefile里不应该是依赖moatl.o来生成moatl.out吗？为什么会提示make :Yo rule to make targetmoatl.o', needed by 'moatl.out' Stop.",
@@ -1973,7 +1970,7 @@ Generating data for input 86.1% 68/79
 Generating data for input 87.3% 69/79
 2024-07-24 02:23:06,041 - INFO - ----- standard request -----
 2024-07-24 02:23:06,043 - INFO - message:
- {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"各位大佬，请问这个水体Thorpe体积衰减系数是什么？",\n"input":"",\n"output":"OPTIONS1(4):描述水体 Thorpe 体积衰减系数的可选参数;如果设置，对应为\'T\'对应Thorp海水吸收衰减经验公式"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我想让你担任水声科学家。我会写一些水声的问答，你的工作就是根据以上问题用通俗易懂的话语扩充若干条问答数据用于大模型微调数据集，将复杂的问答用简单短小的问答代替，问题扩展原则：1.针对一个说明性的问题进行详细全面的回答，从不同方面加以解释和补充。2.确保扩展出的问题与原有背景密切相关，避免脱离语境或显得突兀。3.对每个扩展的问题都提供足够的信息，使其成为一个完整、有价值且容易理解的小问答。4.如果问答中给出教程链接，请保持网址链接文本不变，并在扩充的问答数据适当位置给出。5.使用\'#*%{"instruction":"[问题]","input":"[指令]","output":"[回答]"}@~*的.json格式，注意用#*%和@~*包裹住json，已方便我使用json.loads进行解析。'}, {'role': 'assistant', 'content': '{"instruction":"各位大佬，请问这个水体Thorpe体积衰减系数是什么？",\n"input":"",\n"output":"OPTIONS1(4):描述水体 Thorpe 体积衰减系数的可选参数;如果设置，对应为'T'对应Thorp海水吸收衰减经验公式"}\n'}], 'temperature': 0.8, 'max_tokens': 2000, 'top_p': 0.5, 'frequency_penalty': 0.6, 'presence_penalty': 0.2}
 2024-07-24 02:24:06,238 - INFO - Expecting value: line 1 column 1 (char 0)
 2024-07-24 02:24:06,241 - INFO - 
 
@@ -2147,7 +2144,7 @@ response:
 
 #*%{"instruction": "什么是SOFAR通道？", 
  "input": "", 
- "output": "SOFAR 通道，即 Sound Fixing and Ranging Channel，是一种存在于深海中特定深度范围内由温度梯度及压力效应共同作用形成之自然现象。在这一区域内，由于是温度逐渐降低但压力不断增加，两者综合作用使得该处成为整个水体里音速最低点。当某一位置发出之信号进入此层后，将受限且沿着弯曲路径前行，大幅降低其衰减程度以实现远距离有效覆盖，因此常用于诸如跨洲际通讯乃至紧急搜救等各类实际操作场景里头均发挥巨大作用价值所在！"} @ ~ *
+ "output": "SOFAR 通道，即 Sound Fixing and Ranging Channel，是一种存在于深海中特定深度范围内由温度梯度及压力效应共同作用形成之自然现象。在这一区域内，由于是温度逐渐降低但压力不断增加，两者综合作用使得该处成为整个水体里音速最低点。当某一位置发出之信号进入此层后，将受限且沿着弯曲路径前行，大幅降低其衰减程度以实现远距离有效覆盖，因此常用于诸如跨洲际通讯乃至紧急搜救等各类实际操作场景里头均发挥巨大作用价值所在！"} @~*
 2024-07-24 02:29:37,313 - INFO - 
 
 Generating data for input 100.0% 79/79

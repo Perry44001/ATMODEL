@@ -23,7 +23,23 @@ def extract_text_between_markers(file_path, output_file_path):
                 outjsons.append(output_jsons)
                 continue
         elif match == '和': # 不能跳过第一个json，所以这里要单独处理
-            output_jsons = [json.loads(matches2[i])]
+            try:
+                output_jsons = [json.loads(matches2[i])]
+            except:
+                temp_string = matches2[i]
+                # Step 1: Replace existing \\n with a placeholder
+                temp_string = temp_string.replace(',\\n"input":"",\\n"output"', ',\n"input":"",\n"output"')
+                temp_string = temp_string.replace(',\n"input":"",\n"output"', 'INHOLDER')
+
+                # Step 2: Replace \n with \\n
+                # temp_string = temp_string.replace('\\', '\\\\')
+                temp_string = temp_string.replace('\n', '\\n')
+
+                # Step 3: Replace the placeholder back to \\n
+                temp_string = temp_string.replace('INHOLDER', ',\n"input":"",\n"output"')
+                temp_string = temp_string.replace('\xa0', '')
+
+                output_jsons = [json.loads(temp_string)]
             i += 1
         else:
             try:
@@ -31,20 +47,19 @@ def extract_text_between_markers(file_path, output_file_path):
                 output_jsons.append(outjson)
             except:
                 # Step 1: Replace existing \\n with a placeholder
-                temp_string = re.sub('\\n', 'PLACEHOLDER', match)
-                temp_string = re.sub('\\\\', 'OLAHOLDER', match)
-                temp_string = re.sub(',\n"input":"",\n"output"', 'INHOLDER', match)
+                temp_string = match
+                temp_string = re.sub(',\n"input":"",\n"output"', 'INHOLDER', temp_string)
 
 
                 # Step 2: Replace \n with \\n
                 temp_string = temp_string.replace('\\', '\\\\')
                 temp_string = temp_string.replace('\n', '\\n')
+                # temp_string = temp_string.replace("\'", "\\\\'")
 
                 # Step 3: Replace the placeholder back to \\n
-                temp_string = temp_string.replace('PLACEHOLDER', '\\n')
-                temp_string = temp_string.replace('OLAHOLDER', '\\\\')
                 temp_string = temp_string.replace('INHOLDER', ',\n"input":"",\n"output"')
                 temp_string = temp_string.replace('\xa0', '')
+                temp_string = temp_string.replace('\'', '`')
                 match = temp_string
                 try:
                     outjson = json.loads(match)
@@ -58,8 +73,8 @@ def extract_text_between_markers(file_path, output_file_path):
         json.dump(outjsons, outfile, ensure_ascii=False, indent=4)
 
 # 示例文件路径
-file_path = 'E:\\ATCHATGROOP\\ATMODEL\\log\\output2024-07-24-00-03-30.log'
-output_file_path = 'E:\\ATCHATGROOP\\ATMODEL\\kcdata\\OAPLUS4xxu.json'
+file_path = 'E:\\ATCHATGROOP\\ATMODEL\\log\\output2024-07-24-01-59-10.log'
+output_file_path = 'E:\\ATCHATGROOP\\ATMODEL\\kcdata\\OAPLUS_420240103-20240705.json'
 # 提取文本
 extracted_text = extract_text_between_markers(file_path, output_file_path)
 if extracted_text:
