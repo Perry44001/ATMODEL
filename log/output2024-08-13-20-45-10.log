@@ -1,0 +1,9 @@
+2024-08-13 20:45:10,285 - INFO - cmd: python e:/ATCHATGROOP/ATMODEL/code/openAiLoopReq.py
+2024-08-13 20:45:10,287 - INFO - 
+
+Generating data for input 100.0% 1/1
+2024-08-13 20:45:10,287 - INFO - ----- standard request -----
+2024-08-13 20:45:10,288 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                                [\n                                {\n                                    "instruction": "用户指令（必填）",\n                                    "output": "模型回答（必填）"\n                                }\n                                ]\n                                请利用以下数据扩充这个数据集，改变用户指令和模型回答：\n                                ............'}, {'role': 'assistant', 'content': '{"instruction":"什么是水下浮标","input":"","output":"水下浮标是种用于海洋环境中的设备，用于测量和监测海洋参数和环境。它可以在海水中浮动，并通过传感器和仪器收集数据，例如海洋温度、盐度、压力等。水下浮标通常由浮体、传感器、电子设备和通信系统组成，可以通过无线或有线方式将数据传输到地面站或其他接收设备。水下浮标在海洋科学研究、海洋观测和气候变化研究中起着重要的作用。"}'}]}
+2024-08-13 20:45:31,332 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DA198E4EF0>, 'Connection to apikeyplus.com timed out. (connect timeout=None)'))
+2024-08-13 20:45:31,333 - INFO - Data augmentation complete. The augmented dataset is saved to E:/ATCHATGROOP/ATMODEL/kcdata/OAPLUSLooptest.json

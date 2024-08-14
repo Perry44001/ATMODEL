@@ -1,0 +1,9 @@
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\AT_L_H.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\AT_L_H_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\AT_M_H.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\AT_M_H_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\AT_M_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\AT_M_N_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\AT_S_H.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\AT_S_H_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\AT_S_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\AT_S_N_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\CD_M_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\CD_M_N_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\DS_M_H.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\DS_M_H_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\UA_L_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\UA_L_N_V1.json
+python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reGroup\UA_M_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reGroupKC\UA_M_N_V1.json

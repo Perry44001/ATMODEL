@@ -1,0 +1,92 @@
+[
+  {
+    "instruction": "WOA18全球数据数据格式有多种，请问下载哪种格式呢，用什么方法处理？",
+    "input": "",
+    "output": "下载 https://www.ncei.noaa.gov/access/world-ocean-atlas-2018/ 中. nc格式的Netcdf文件，MATLAB可以处理，使用ncread读取，参见代码 https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/BELLHOPQ&A/02DataSetInteraction/02BELLHOP_WOA/Nonan.m 。"
+  },
+  {
+    "instruction": "有没有获取海底地形数据的公开来源？",
+    "input": "",
+    "output": "可以使用的etopo岩基数据，官方网址： https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/bedrock/grid_registered/netcdf/ ，可以使用matlab ncread ncdisp等函数读取该文件。教程视频【01ETOPO1数据写入bty】 https://www.bilibili.com/video/BV1wu4y1J7MV/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2 。 "
+  },
+  {
+    "instruction": "请问一下，海底地形，声速剖面等信息是从哪里下载的？",
+    "input": "",
+    "output": "海深的话， https://www.gebco.net/ 有全球海深数据，也可以使用可以使用的etopo岩基数据，官方网址： https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/bedrock/grid_registered/netcdf/ ，下载模式或者argo的温盐剖面数据， https://www.ncei.noaa.gov/access/world-ocean-atlas-2023/ ，然后用声速经验公式得到声速剖面"
+  },
+  {
+    "instruction": "怎么去修改海洋环境的声速剖面？",
+    "input": "",
+    "output": "下载模式或者argo的温盐剖面数据， https://www.ncei.noaa.gov/access/world-ocean-atlas-2023/ ，然后用声速经验公式得到声速剖面。"
+  },
+  {
+    "instruction": "argo数据深度一般在2000m左右，如果想要获取更深的海洋水声信息，应该如何处理？",
+    "input": "",
+    "output": "目前声速剖面信息可以从各地的公开水温数据库中下载，比如HYCOM（美国） https://www.hycom.org/ ，NMDC（中国国家海洋数据中心） https://mds.nmdis.org.cn/pages/home.html ，都可以下载水文数据，覆盖全球海深"
+  },
+  {
+    "instruction": "SW06数据集去哪里可以下载？",
+    "input": "",
+    "output": "swellex96的数据链接： http://swellex96.ucsd.edu/events.htm"
+  },
+  {
+    "instruction": "如何找低纬度高纬度的声速剖面数据？",
+    "input": "",
+    "output": "下载模式或者argo的温盐剖面数据， https://www.ncei.noaa.gov/access/world-ocean-atlas-2023/ ，打开matlab使用ncdisp查看下载文件的关键字，读取温度数据，然后用声速经验公式得到声速剖面。"
+  },
+  {
+    "instruction": "请问一下逐时海浪（浪高、浪向、风向、风速）、逐时海温、逐时海潮、逐时海流（流速、流向）的数据可以去哪里下载？",
+    "input": "",
+    "output": "中国海洋信息网可以下载，网址 https://www.nmdis.org.cn/"
+  },
+  {
+    "instruction": "哪有海洋锋面、内波、波浪、中尺度涡旋的数据？",
+    "input": "",
+    "output": "请看这个链接： https://www.aviso.altimetry.fr/en/data/products/value-added-products/global-mesoscale-eddy-trajectory-product/meta3-2-dt.html"
+  },
+  {
+    "instruction": "声速剖面的数据除了实测，网上还有那些月或者日平均数据？比如说南海海域的数据",
+    "input": "",
+    "output": "请看这个链接： https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/files?subdataset=cmems_mod_glo_phy-cur_anfc_0.083deg_PT6H-i_202211&path=GLOBAL_ANALYSISFORECAST_PHY_001_024%2Fcmems_mod_glo_phy-cur_anfc_0.083deg_PT6H-i_202211%2F2021%2F03%2F"
+  },
+  {
+    "instruction": "有海洋内波的数据吗？",
+    "input": "",
+    "output": "海洋内波的数据 https://www.internalwaveatlas.com/ "
+  },
+  {
+    "instruction": "哪里有海洋环境噪声数据可以下载吗？",
+    "input": "",
+    "output": "这个网址有一些公开数据： https://oalib-acoustics.org/experiments-data/。"
+  },
+  {
+    "instruction": "声速nc文件怎么写成深度加声速的这种格式\n0 1487.57543900000\n5 1487.48315400000",
+    "input": "",
+    "output": "使用ncread函数，调用格式是ncread('文件名','关键字')，深度和声速是两个关键字，读取出来后，使用fprintf('%4.f  %6.2f\n', [depth; ssp])即可格式化输出结果，其中depth和ssp的纬度均为1*N，为行向量,nc数据可以从该网址下载： https://mds.nmdis.org.cn/pages/dataViewDetail.html?dataSetId=51"
+  },
+  {
+    "instruction": "如果我想找特定海域的声速剖面数据，哪里有这些数据吗？",
+    "input": "",
+    "output": "可以使用argo的实测数据，网址： https://data.marine.copernicus.eu/login?redirect=%2Fproduct%2FGLOBAL_MULTIYEAR_PHY_001_030%2Fdownload%3Fdataset%3Dcmems_mod_glo_phy_my_0.083_P1D-m"
+  },
+  {
+    "instruction": "argo数据库下载的数据都是nc文件吗",
+    "input": "",
+    "output": "argo下载的有直接是Matlab数据格式，网址链接： https://www.argo.org.cn/index.php?m=content&c=index&a=lists&catid=27"
+  },
+  {
+    "instruction": "有北极双声道的完整声速剖面吗",
+    "input": "",
+    "output": "网址： https://gitee.com/open-ocean/Underwater-Target-Recognition/tree/master/TypicalSSP ，北极双声道的完整声速剖面在文件夹1中，感谢vx网友Corgi的贡献"
+  },
+  {
+    "instruction": "有常见海底底质对应的横纵波速度表吗？",
+    "input": "",
+    "output": "请看这个网址： https://gitee.com/open-ocean/Underwater-Target-Recognition/tree/master/DiZhi"
+  },
+  {
+    "instruction": "有船舶AIS数据的相关内容吗？",
+    "input": "",
+    "output": "globalfishwatch网站上有12年起的数据和行为分析"
+  }
+]

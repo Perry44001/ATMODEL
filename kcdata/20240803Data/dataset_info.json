@@ -1,0 +1,146 @@
+{
+    "description": "Lama finetuning dataset",
+    "data_files": [
+        {
+            "file": "20211207-20220617KC.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "kc20211207-20220617.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "kc20220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "kc20240103-20240705.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "kcxxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "name.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS20211207-20220617.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS20220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS20240103-20240705.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS4xxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS4_20211207-20220617.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS4_20220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS4_20240103-20240705.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS520211207-20220617.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS520220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUS5xxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVII20211207-20220617.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVII20211207-20220617_121405.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVII20220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVII20220617-20240103_121408.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVII20240103-20240705.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVII20240103-20240705_121412.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIII20220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIII20240103-20240705.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIIIxxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIIxxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIIxxu_121412.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIV20211207-20220617.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIV20220617-20240103.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIV20240103-20240705.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSVIVxxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSxxu.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "OAPLUSxxuLZX.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        },
+        {
+            "file": "xxuKC.json",
+            "description": "Contains instructions, inputs, and outputs for Lama finetuning"
+        }
+    ],
+    "input_schema": [
+        "instruction",
+        "input",
+        "output"
+    ]
+}

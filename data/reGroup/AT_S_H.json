@@ -1,0 +1,62 @@
+[
+    {
+        "instruction": "请问您有kraken的中文文档吗？",
+        "input": "",
+        "output": "karaken说明完整版.pdf在如下链接： https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/AcousticToolbox/handbook。"
+    },
+    {
+        "instruction": "请问kraken仿真可以做到仿真海洋中存在目标的情况么？就是声源、接收器加一个刚性球比如说这样？",
+        "input": "",
+        "output": "您所说的需求用k-wave工具箱做（ http://www.k-wave.org/ ），但是用kraken比较困难。"
+    },
+    {
+        "instruction": "请问有没有linux环境下运行的声学工具箱。",
+        "input": "",
+        "output": "可以使用gcc或者gfortan重新编译声学工具箱的fortran源代码，视频教程链接 https://www.bilibili.com/video/BV1944y1F7nN/"
+    },
+    {
+        "instruction": "请问Kraken里怎么添加水平距离相关的声速剖面以及增加海底地形？",
+        "input": "",
+        "output": "在.flp声场文件里有NPROF声速剖面格式这个参数，并且在.env中重复写环境，就可以增加多个距离相关的环境，具体的例子可以看：  https://www.bilibili.com/video/BV1bu4y1P7mR/"
+    },
+    {
+        "instruction": "有没有好用的windows桌面科学上网端啊",
+        "input": "",
+        "output": "请看这个链接 https://doc.miyun.app/app/clash-win/"
+    },
+    {
+        "instruction": "请问大家谁有 水声学原理第三版的pdf吗",
+        "input": "",
+        "output": "水声学原理第三版的pdf： https://gitee.com/open-ocean/eBook/tree/master/book"
+    },
+    {
+        "instruction": "有没Python调用bellhop的教程啊",
+        "input": "",
+        "output": "Python调用bellhop的教程网址 https://arlpy.readthedocs.io/en/latest/_static/bellhop.html"
+    },
+    {
+        "instruction": "bellhop如何获取宽带信号的信道冲激响应吗？",
+        "input": "",
+        "output": "对于宽带信号，可以按照中心频率计算bellhop，这里有一个例子： https://gitee.com/open-ocean/underwater-acoustic-communication/tree/master/ArrivalStructure"
+    },
+    {
+        "instruction": "计算海洋声学的电子书在哪找？",
+        "input": "",
+        "output": "网址链接： https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf"
+    },
+    {
+        "instruction": "bellhop3d有教程吗？",
+        "input": "",
+        "output": "请看教程：【13Bellhop3D入门】 https://www.bilibili.com/video/BV1Gg4y1X7TK/?share_source=copy_web"
+    },
+    {
+        "instruction": "bellhop3d有什么资料吗？",
+        "input": "",
+        "output": "推荐这个公众号的文章，网址： https://mp.weixin.qq.com/s/kM18hOexEWHMm7b1FaNjuA 公众号“难得加油”，"
+    },
+    {
+        "instruction": "fortran是软件吗？",
+        "input": "",
+        "output": "fortran是一门编程语言，如果需要学习可以看看Fortran coder的教程，网址链接 http://fcode.cn/。"
+    }
+]

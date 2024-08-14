@@ -1,0 +1,352 @@
+[
+    {
+        "instruction": "请问Bellohop模型在matlab仿真中通过什么文件来分别描述水体环境，海面形状，海底形状？",
+        "input": "",
+        "output": "Bellohop模型在matlab仿真中通过*.env描述水体环境，*.ati:描述海面形状，*.bty:描述海底形状。"
+    },
+    {
+        "instruction": "请问Bellohop模型在整体环境文件中通过相关选项来产生哪些不同的输出文件？",
+        "input": "",
+        "output": "Bellohop模型在整体环境文件中通过*.ray:描述声线和本征声线，*.shd:描述声线的传播损失，*.arr:描述声线到达的时间-幅度序列等参数。"
+    },
+    {
+        "instruction": "RAM是不是不能设置声源类型和掠射角？",
+        "input": "",
+        "output": "您想要修改 RAM 原本的 Fortran 程序，以便使用 Collins 自起始场。这需要修改 Fortran 源代码。"
+    },
+    {
+        "instruction": "kraken 的NMedia是怎么算的？ 水层、沉积层、基底？",
+        "input": "",
+        "output": "半空间不算的，空气和海底最后一层都是半空间，如果没有那就是水层+沉积层，注意沉积层可能不止一层"
+    },
+    {
+        "instruction": "用Bellhop计算声场时不生成shd文件是什么原因，报错信息：\nbellhop MunkB_Coh\nSTOP Fatal Error:See print file for details",
+        "input": "",
+        "output": "Print file for details 指的是.prt文件，因此需要打开.prt文件进行查看。"
+    },
+    {
+        "instruction": "水声信号的调制解调，信号经过bellhop仿真后的水声信道后误码率很高，无法解调应该如何解决？",
+        "input": "",
+        "output": "将码率调小一点，码元持续时间大一点误码率会小一些，并使用信道均衡的算法。"
+    },
+    {
+        "instruction": "用kraken计算的声传播损失声源附近有横纹正常嘛",
+        "input": "",
+        "output": "这是正常的，高阶简正波或者可能是水平方向衰减的波，形成了驻波。"
+    },
+    {
+        "instruction": "请问声道如何表示呢，声线图或者损失图也可以表示吗？",
+        "input": "",
+        "output": "这可以直观得在声线图或者传播损失图形里边看出来，在大洋声道中，声源位于深海声道附近深度时，信号就是比较亮的一条线"
+    },
+    {
+        "instruction": "请问一下，RAM是不是只能设置两层环境呀？(水层和海底半空间)",
+        "input": "",
+        "output": "可以设置多层的，应该是要把海底看成很多层，用更细致的密度、声速剖面来描述这些层，在处理时，可以将两层中间加入一层过度层。"
+    },
+    {
+        "instruction": "画出来的传播损失怎么会这么毛糙，是不是不太对啊？",
+        "input": "",
+        "output": "正常的，如果不同声线或者简正波号数之间的干涉效应导致的毛刺。"
+    },
+    {
+        "instruction": "kraken要怎么仿真宽带的声场?",
+        "input": "",
+        "output": "写个循环，改变频率，并不断读取数据，还可以将TOP OPTION加入宽带计算模式，即第六个字符为B，并在env的结尾上加入频率向量，例如\n100 !Nfreq\n 50 100 !freq(1) ... freq(Nfreq)。"
+    },
+    {
+        "instruction": "请问kraken程序使用的声场模型是什么？",
+        "input": "",
+        "output": "kraken程序使用的声场模型是简正波模型。"
+    },
+    {
+        "instruction": "bellhop地形bty文件配置里的r和z是啥意思？",
+        "input": "",
+        "output": "r代表距离，z代表海深。"
+    },
+    {
+        "instruction": "没找到plotfield这个函数，是新函数代替了吗？",
+        "input": "",
+        "output": "是的，这个函数被替换为plotshd.m，旧版本说明里用的是plotfield,但最新程序包里用的是plotshd。"
+    },
+    {
+        "instruction": "请教一个问题，在bellhop加地形仿真时为什么有些声线入射在地形上就没有了反射声线，而有些声线入射到地形上有反射声线，这和设置有关系吗？",
+        "input": "",
+        "output": "计算的深度范围zBox可以再设置深一点，大于最大的地形深度。"
+    },
+    {
+        "instruction": "请问一下bellhop3d中，N*2D.env和3D.env有什么区别？",
+        "input": "",
+        "output": "3的话就代表全3维运行，会有水平绕射的，是2的话就是N*2D运行，不考虑水平绕射。"
+    },
+    {
+        "instruction": "设置边界的时候怎么设置一个完全吸收的界面？",
+        "input": "",
+        "output": "设置边界时介质的阻抗匹配rho c相等，并且吸收系数设置大一些。"
+    },
+    {
+        "instruction": "For3d与bellhop3d有什么不同?",
+        "input": "",
+        "output": "两者既有联系也有区别，两者都是算3d声场的模型，但用的模型不同，For3d用的是抛物方程模型，Bellhop3d是声线模型。"
+    },
+    {
+        "instruction": "如果实际的声速剖面深度，达不到该处海深，应该如何处理？",
+        "input": "",
+        "output": "您可以顺着最后一层的声速梯度算插值到海底（一般深海等等温层即深度超过1300m后可以这样做），把海深深度的声速设置为最后一层的声速（一般浅海混合层，即深度大于50m可以这样做）。"
+    },
+    {
+        "instruction": "声学工具箱里面有.ssp文件吗",
+        "input": "",
+        "output": "有的，下载声学工具箱后，可以使用windows的搜索功能，搜索.ssp文件，声学工具箱相关的环境文件均在at\\tests文件夹内。"
+    },
+    {
+        "instruction": "请教一下大家 kraken模型能不能设置同一深度条件下接收器由远及近靠近声源呢",
+        "input": "",
+        "output": " flp中的 rr就是设置接收器的距离的，但是似乎只能从小到大排列，可以计算出声压后，flip得到由远到近的声场声压。"
+    },
+    {
+        "instruction": "kraken是无法处理高频声源吗，应该如何计算高频声源的声场?",
+        "input": "",
+        "output": "可以使用bellhop处理高频声源的声场计算。"
+    },
+    {
+        "instruction": "请问krakenc能处理不规则形状海底情况吗",
+        "input": "",
+        "output": "krakenc相对于kraken来说，多考虑了一些模式泄露，krakenc也可以处理不规则形状海底情况。"
+    },
+    {
+        "instruction": "用bellhop计算传播损失改变频率计算出的图形形状不变是怎么回事",
+        "input": "",
+        "output": "一般来说，改变频率会导致碰顶和碰底的声线幅度和相位发生变化运行方式改为'C'相干模式，可能会有明显变化，另外top option第四个参数加上T就会计算随频率变化的吸收，声线数Nbeams改为0，程序默认频率越大声线数越多都会导致传播损失发生变化。"
+    },
+    {
+        "instruction": "为什么深海的声线到达角度要普遍比浅海大吗?",
+        "input": "",
+        "output": "深海有足够的深度，深海里声速梯度大，可以使大角度声线弯曲不碰到边界，而浅海大角度反射多衰减大，因此深海的声线到达角度要普遍比浅海大。"
+    },
+    {
+        "instruction": "怎么解释汇聚区的传播损失比声影区的小呢？",
+        "input": "",
+        "output": "从定义上来说，汇聚区的定义即为声线汇聚的区域，或者说声能量集中的地区，而声影区则相反。"
+    },
+    {
+        "instruction": "请教下大家，bellhop 3d中的THETA是什么意思？",
+        "input": "",
+        "output": "bellhop中的theta指的是扇面角，正东为0度 逆时针旋转。"
+    },
+    {
+        "instruction": "请问bellhop 的 SSP 文件里可以出现Nan值吗?",
+        "input": "",
+        "output": "不行，nan的地方需要插值为有效数字。"
+    },
+    {
+        "instruction": "bellhop运行出来文件ARR中的结构幅度Arr.A，是对应的信道的单位冲击响应的幅度吗？",
+        "input": "",
+        "output": "Arr中的关键字A是个复数，表示声线反射或者经过焦散点后的幅度和相位的信息，Arr.A的幅度abs(Arr.A)是信道的单位冲击响应的幅度。"
+    },
+    {
+        "instruction": "请问一下，krakenc函数比kraken函数多考虑了什么",
+        "input": "",
+        "output": "而且求本征值的原理不同，考虑到了本征值为复数的求解，krakenc相对于kraken来说，多考虑了一些模式泄露，比如说横波对简正波特征值的影响。"
+    },
+    {
+        "instruction": "请问一下shd文件里面读出来的pressure是声压幅值还是有效声压？",
+        "input": "",
+        "output": "由于有效声压=声压幅度/sqrt(2)，并且pressure是无量纲的，因此pressure一般来说可以代表声压幅值或者有效声压的常数倍。"
+    },
+    {
+        "instruction": "声线工具箱中kraken和bellhop进行仿真水声传播，还有什么模型能进行仿真的？",
+        "input": "",
+        "output": "常用的还有声学工具箱中的抛物方程ram模型。"
+    },
+    {
+        "instruction": "请问一下，如何在matlab中调用bellhop进行仿真呢？",
+        "input": "",
+        "output": "请参考这个链接 https//blog.csdn.net/suiranyou2/article/details/129236257"
+    },
+    {
+        "instruction": "舰船辐射噪声每倍频程6dB衰减，这是什么意思？",
+        "input": "",
+        "output": "这是连续谱的衰减，连续谱的频率变为原来的2倍时，连续谱的能量下降6dB。"
+    },
+    {
+        "instruction": "请问声学工具箱中有使用kraken计算海山海底地形的例子嘛？",
+        "input": "",
+        "output": "有的，在at\\tests\\Dickins\\DickinsPrecalc，这里面的DickinsK就是。"
+    },
+    {
+        "instruction": "请教各位个问题，声速场ssp文件中，距离范围是m还是km",
+        "input": "",
+        "output": "声速场ssp文件中，距离范围默认定义的是km。"
+    },
+    {
+        "instruction": "同样的设置在kraken里所有模态的角度都达不到bellhop设置这个声线的角度（这个声线算出来传播了很远的距离） 那这是哪个工具包算错了",
+        "input": "",
+        "output": "浅海低频的话还是kraken准，判断用啥模型可以用这个公式\n海深/波长=10\n小于的话用kraken，大于用bellhop。"
+    },
+    {
+        "instruction": "kraken可以设置声源指向性嘛？",
+        "input": "",
+        "output": "和bellhop一样，kraken通过.sbp配置声源指向性，而且就是通过thetaT= atan(kzm/krm)的方式实现的，但是这处理认为指向性是关于水平对称的"
+    },
+    {
+        "instruction": "请问大家woa18年平均温度,与气候态年平均温度是什么概念。",
+        "input": "",
+        "output": "年平均是每年的平均，而气候态指的是10年和30年平均。"
+    },
+    {
+        "instruction": "一般计算宽带信号的传播损失，是直接计算各频点复声压然后取平均吗？",
+        "input": "",
+        "output": "可以根据发射信号功率给不同频点的传播加权，并求和得到更准确的宽带传播损失。"
+    },
+    {
+        "instruction": "Pekeris波导的群速度为啥不是单调的？",
+        "input": "",
+        "output": "从《分层介质中的波（第二版）-布列霍夫斯基，杨训仁译》能找到这个原理的简单解释。简单说的话应该是pekeris波导海底有吸收导致的群速度曲线不是单调的。"
+    },
+    {
+        "instruction": "kraken的配置文件flp如何设置倾斜阵？",
+        "input": "",
+        "output": "直接设置每个阵元的偏移量即可，即修改在.flp文件中nrr和rr的配置行，程序计算声场时会把接收距离r换成r+rr。"
+    },
+    {
+        "instruction": "bellhop和ram模型可以和kraken一样设置多个频率并计算声场吗？",
+        "input": "",
+        "output": "Ram和bellhop不能一次计算多频点多声源，只能写多个环境文件，批量调用模型计算。"
+    },
+    {
+        "instruction": "kraken的输入文件是不是只有.env和.flp",
+        "input": "",
+        "output": "不是，还有.trc .brc .irc（反射系数文件）、.sbp（声源指向性文件）备选。"
+    },
+    {
+        "instruction": "bellhop计算信道冲激响应时，保留声线是什么样的原则。",
+        "input": "",
+        "output": "如果存储空间不够，程序会把幅度较小的声线排挤出去，录入幅度较大的声线，因此是按照幅度大小来保留。"
+    },
+    {
+        "instruction": "如果仿真要求不考虑声速剖面，只给定一个固定声速，那Bellhop环境文件声速剖面那部分怎么写",
+        "input": "",
+        "output": "0 1500\n5000 1500"
+    },
+    {
+        "instruction": "如果进行水声信号调制，那我模拟生成信号应该是什么样的形式？",
+        "input": "",
+        "output": "可以试试cw、lfm、hfm、矩形脉冲、方波、三角波等信号。"
+    },
+    {
+        "instruction": "plotshd输出的传播损失图的单位是什么？",
+        "input": "",
+        "output": "plotshd输出的传播损失图的单位是dB"
+    },
+    {
+        "instruction": ".env中的密度填1,单位是什么？",
+        "input": "",
+        "output": "单位是g/cc（1e3 kg/m^3）"
+    },
+    {
+        "instruction": " 声场计算的网格代表的是什么意思",
+        "input": "",
+        "output": "网格可以简单理解为就是阵元的位置，网格点就是阵元的坐标"
+    },
+    {
+        "instruction": "模态结构体里的k的实部就是水平波数吗？水平波数包括它的虚部吗？",
+        "input": "",
+        "output": "模态结构体里的k是水平波数，k是个复数，因此也包括虚部。"
+    },
+    {
+        "instruction": "kraken可以计算声线到达结构.arr吗？",
+        "input": "",
+        "output": "kraken即简正波方法是波场累和，无法获得射线路径，也无法计算声线到达结构.arr。射线方法是通过求解程函方程获得走时场，对走时场求取负梯度获得射线路径。"
+    },
+    {
+        "instruction": "kraken的环境文件.env和.flp中的声源和接收器位置设置的不一样时，会以哪个文件的为准？",
+        "input": "",
+        "output": "当声源深度在接收深度范围内时，env的后四行即声源和接收器位置设置 都以flp为准，因为计算出.mod后，field.exe直接读取.flp计算声场。"
+    },
+    {
+        "instruction": "耦合简正波Couple和抛物方程模型RAM的计算结果一致吗？",
+        "input": "",
+        "output": "有学者对比过Couple和RAM，结论是：\n在低频结果基本一致，到1000Hz变化趋势一致。"
+    },
+    {
+        "instruction": "请问ram怎么运行加速呀？",
+        "input": "",
+        "output": "三维的话可以从N×2D的水平角度并行，二维的话从有限差分的差分并行，如果是宽频信号的话，从N个频点那并行"
+    },
+    {
+        "instruction": "如何从水听器阵列接收的声信号计算传播损失啊？",
+        "input": "",
+        "output": "理论上算一下声源级和接收信号级，减一下就得到传播损失。"
+    },
+    {
+        "instruction": "传播损失需要减去噪声级吗？",
+        "input": "",
+        "output": "传播损失不用考虑噪声级。"
+    },
+    {
+        "instruction": "海面.ati和海底形状.bty会影响bellhop生成的.arr文件吗",
+        "input": "",
+        "output": "海面.ati和海底形状.bty会影响声线传播，进而影响生成的.arr文件。"
+    },
+    {
+        "instruction": "kraken的env文件中的海深的三个值，必须一致吗？如何实际海底比测量的声速剖面深应该怎么办？",
+        "input": "",
+        "output": "海深、声速剖面深度和第二层介质起始深度必须一致，如果不一致可能会导致kraken无法运行，如果声速剖面只测到水下143m，可以使用线性最近邻外插法得到147m的声速，即使用143m的声速数据作为147m的声速。"
+    },
+    {
+        "instruction": "请问大家，吸收损失单位中'F'所用单位跟dB/m/kHz是一样的吗？",
+        "input": "",
+        "output": "F指与频率相关(Freq.dependent)，单位dB/(kmHz)=dB/(mkHz)，是一样的"
+    },
+    {
+        "instruction": "bellhop计算到达结构时.env一般设置声线数量多少？",
+        "input": "",
+        "output": "一般就设置0，0就是交给程序自动计算合适的声线数。"
+    },
+    {
+        "instruction": "深海低频的条件下，Bellhop与Kraken的计算结果误差大吗",
+        "input": "",
+        "output": "整体计算的传播损失趋势误差不大，但是具体的海洋环境下的误差可能不一定。"
+    },
+    {
+        "instruction": "ram如何设置垂直阵列倾斜的情况啊？",
+        "input": "",
+        "output": "只能把网格做细点，提取斜线上对应的声场网格点数据。"
+    },
+    {
+        "instruction": "RAM没有.prt文件，那可以知道它哪里报错了吗？",
+        "input": "",
+        "output": "RAM没有打印信息的.prt文件，只能看matlab或者其他命令行看调用的错误信息。"
+    },
+    {
+        "instruction": "距离-频率图怎么画？",
+        "input": "",
+        "output": "接收器放在感兴趣的距离上，改变频率做循环计算声场，并把声压矩阵叠加存储到一个二维矩阵上。"
+    },
+    {
+        "instruction": "如果BELLHOP环境文件里BOTTOM OPTION设置为'R'，转换为RAM的输入文件时，应该怎么体现呢？",
+        "input": "",
+        "output": "可以把海底的声速和密度设置大一些，比如说cb = 15000，rhob=15这样试一下"
+    },
+    {
+        "instruction": "为什么画出来的声线图，随着海底海面接触次数增多，它的轨迹会趋于一条直线，弯曲程度不明显呢",
+        "input": "",
+        "output": "接触次数多的，掠射角一般很大，弧线半径变大，曲率变小，弯曲程度越小，根据snell定律c1/c2=cosφ1/cosφ2可以得到。"
+    },
+    {
+        "instruction": "BELLHOP在写arr文件的时候，有没有对幅值进行阈值判断，就是大于多少才写入arr文件里",
+        "input": "",
+        "output": "程序认为有贡献的才会写入，满足接收器与声线的垂直距离小于波束宽度，在程序中会判断一次看相邻两条会不会很接近，如果接近，则同化成一条，在此基础上的所有只要不超过Narrmax的都会写入，如果超过了，则会进行排序，把最小幅度的达到结构覆盖掉。"
+    },
+    {
+        "instruction": "请问kraken设置环境文件中，比如我对于海水部分写了四个深度处的参数，那这四个深度之间是线性插值的吗？",
+        "input": "",
+        "output": "在env文件的topoption第一个字母是控制插值方式的，有线性插值'N'、三次样条插值'S'等几种。"
+    },
+    {
+        "instruction": "想用bellhop算点对点的传播损失的话，“C”模式下只布置一个接收点可行吗？这样是不是相当于没有网格，算出来不准确？那如果在“A”模式下，只布置一个接收点，然后用声线叠加的方式计算该点处声压呢，这样会好一些吗？",
+        "input": "",
+        "output": "一样的，声场计算结果和设置多少个接收点无关。"
+    }
+]
