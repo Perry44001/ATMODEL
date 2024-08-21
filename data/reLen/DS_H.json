@@ -1,0 +1,88 @@
+[
+  {
+    "instruction": "WOA18全球数据的下载网址是？",
+    "input": "",
+    "output": "下载网址【WOA18水文数据库】 https://www.ncei.noaa.gov/access/world-ocean-atlas-2018/"
+  },
+  {
+    "instruction": "WOA18数据应下载哪种格式？",
+    "input": "",
+    "output": "下载WOA18网站的.nc格式即Netcdf文件。"
+  },
+  {
+    "instruction": ".nc格式的WOA18数据用什么方法处理？",
+    "input": "",
+    "output": "使用MATLAB处理，使用ncdisp函数展示.nc格式的关键字，ncread读取.nc中数据。"
+  },
+  {
+    "instruction": "WOA18数据如何处理为声速剖面？",
+    "input": "",
+    "output": "参见网址链接【WOA数据Matlab代码处理】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/BELLHOPQ&A/02DataSetInteraction/02BELLHOP_WOA"
+  },
+  {
+    "instruction": "有没有获取海底地形数据的公开来源？",
+    "input": "",
+    "output": "可以使用的etopo岩基数据，官方网址：【etopo地形数据库】 https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/bedrock/grid_registered/netcdf/"
+  },
+  {
+    "instruction": "nc格式的etopo数据用什么方法处理？",
+    "input": "",
+    "output": "使用MATLAB处理，使用ncdisp函数展示.nc格式的关键字，ncread读取.nc中数据。教程视频【01ETOPO1数据写入bty】 https://www.bilibili.com/video/BV1wu4y1J7MV/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+  },
+  {
+    "instruction": "nc格式的etopo数据如何处理为地形文件？",
+    "input": "",
+    "output": "参见教程视频【01ETOPO1数据写入bty】 https://www.bilibili.com/video/BV1wu4y1J7MV/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+  },
+  {
+    "instruction": "除WOA数据外，还有那些水温数据库？",
+    "input": "",
+    "output": "还有HYCOM（美国） https://www.hycom.org/ ，NMDC（中国国家海洋数据中心） https://mds.nmdis.org.cn/pages/home.html 等"
+  },
+  {
+    "instruction": "SW06数据集的下载网址是？",
+    "input": "",
+    "output": "【swellex96的数据】 http://swellex96.ucsd.edu/events.htm"
+  },
+  {
+    "instruction": "逐时海浪（浪高、浪向、风向、风速）、逐时海温、逐时海潮、逐时海流（流速、流向）的数据在哪里下载？",
+    "input": "",
+    "output": "【中国海洋信息网】 https://www.nmdis.org.cn/"
+  },
+  {
+    "instruction": "海洋锋面、内波、波浪、中尺度涡旋的数据在哪里下载？",
+    "input": "",
+    "output": "【海洋锋面、内波、波浪、中尺度涡旋】 https://www.aviso.altimetry.fr/en/data/products/value-added-products/global-mesoscale-eddy-trajectory-product/meta3-2-dt.html"
+  },
+
+  {
+    "instruction": "海洋内波的数据在哪下载？",
+    "input": "",
+    "output": "【海洋内波的数据】 https://www.internalwaveatlas.com/ "
+  },
+  {
+    "instruction": "海洋环境噪声数据在哪下载？",
+    "input": "",
+    "output": "【海洋环境噪声数据】 https://oalib-acoustics.org/experiments-data/"
+  },
+  {
+    "instruction": "argo数据库下载的数据都是nc文件吗？",
+    "input": "",
+    "output": "有.mat数据格式，【argo数据.mat格式】 https://www.argo.org.cn/index.php?m=content&c=index&a=lists&catid=27"
+  },
+  {
+    "instruction": "有北极双声道的完整声速剖面吗？",
+    "input": "",
+    "output": "【北极双声道的完整声速剖面 Corgi的贡献】 https://gitee.com/open-ocean/Underwater-Target-Recognition/tree/master/TypicalSSP/1ThreeSSPs"
+  },
+  {
+    "instruction": "海底底质对应的横纵波速度表是？",
+    "input": "",
+    "output": "【常见海底底质对应的横纵波速度表】 https://gitee.com/open-ocean/Underwater-Target-Recognition/tree/master/DiZhi"
+  },
+  {
+    "instruction": "船舶AIS数据的相关网站地址是？",
+    "input": "",
+    "output": "【globalfishwatch 船舶AIS数据】 https://globalfishingwatch.org/"
+  }
+]

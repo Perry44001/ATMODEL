@@ -1,0 +1,25 @@
+2024-08-19 14:38:25,407 - INFO - cmd: python .\openAiLp.py -i E:\ATCHATGROOP\ATMODEL\data\reLen\UA_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reLenKC\UA_N_V1.json -r 42
+2024-08-19 14:38:25,408 - INFO - 
+
+Generating data for input 67.7% 42/62
+2024-08-19 14:38:25,409 - INFO - ----- standard request -----
+2024-08-19 14:38:25,410 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，在扩充数据集中，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"深海和浅海的分界线是多深？","input":"","output":"深浅海在深度上的定义似乎不是特别明确，部分学者认为海深1000米为深浅海的分界线。"}'}]}
+2024-08-19 14:38:36,098 - INFO - 'choices'
+2024-08-19 14:38:36,100 - INFO - 
+response:
+ 
+2024-08-19 14:38:36,102 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"深海和浅海的分界线是多深？","input":"","output":"深浅海在深度上的定义似乎不是特别明确，部分学者认为海深1000米为深浅海的分界线。"}'}]}
+2024-08-19 14:38:46,927 - INFO - 'choices'
+2024-08-19 14:38:46,928 - INFO - 
+response:
+ 
+2024-08-19 14:38:46,930 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"深海和浅海的分界线是多深？","input":"","output":"深浅海在深度上的定义似乎不是特别明确，部分学者认为海深1000米为深浅海的分界线。"}'}]}
+2024-08-19 14:38:57,680 - INFO - 'choices'
+2024-08-19 14:38:57,681 - INFO - 
+response:
+ 
+2024-08-19 14:38:57,684 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"深海和浅海的分界线是多深？","input":"","output":"深浅海在深度上的定义似乎不是特别明确，部分学者认为海深1000米为深浅海的分界线。"}'}]}

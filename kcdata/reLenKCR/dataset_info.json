@@ -1,0 +1,50 @@
+{
+    "AT_H_V1R": {
+        "file_name": "AT_H_V1R.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "AT_N_V1R": {
+        "file_name": "AT_N_V1R.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "CD_V1R": {
+        "file_name": "CD_V1R.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "DS_H_V1R": {
+        "file_name": "DS_H_V1R.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "UA_N_V1R": {
+        "file_name": "UA_N_V1R.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "identity": {
+        "file_name": "identity.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    }
+}

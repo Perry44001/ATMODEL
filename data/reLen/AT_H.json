@@ -1,0 +1,362 @@
+[
+    {
+        "instruction": "请问您有kraken的中文文档吗？",
+        "input": "",
+        "output": "karaken说明完整版.pdf在如下链接：【karaken说明完整版】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/AcousticToolbox/handbook。"
+    },
+    {
+        "instruction": "请问kraken仿真可以做到仿真海洋中存在目标的情况么？",
+        "input": "",
+        "output": "您所说的需求可以使用k-wave工具箱做（【k-wave工具箱】 http://www.k-wave.org/ ），但是用kraken比较困难。"
+    },
+    {
+        "instruction": "linux环境下如何运行的声学工具箱？",
+        "input": "",
+        "output": "可以使用gcc或者gfortan重新编译声学工具箱的fortran源代码，Acoustic Toolbox Linux 编译】 https://www.bilibili.com/video/BV1944y1F7nN/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "Kraken怎么添加水平距离相关的声速剖面以及增加海底地形？",
+        "input": "",
+        "output": "在.flp声场文件里有NPROF声速剖面格式这个参数，并且在.env中重复写环境，就可以增加多个距离相关的环境，具体的例子可以看： 【08BELLHOP传播损失验证】 https://www.bilibili.com/video/BV1bu4y1P7mR/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "有没有好用的windows桌面科学上网端？",
+        "input": "",
+        "output": "请看这个链接【windows桌面科学上网端】 https://doc.miyun.app/app/clash-win/"
+    },
+    {
+        "instruction": "水声学原理第三版的pdf在哪下载？",
+        "input": "",
+        "output": "【水声学原理第三版的pdf】 https://gitee.com/open-ocean/eBook/tree/master/book"
+    },
+    {
+        "instruction": "Python如何调用bellhop？",
+        "input": "",
+        "output": "参见【Python调用bellhop】 https://arlpy.readthedocs.io/en/latest/_static/bellhop.html"
+    },
+    {
+        "instruction": "bellhop如何获取宽带信号的信道冲激响应吗？",
+        "input": "",
+        "output": "对于宽带信号，可以按照中心频率计算bellhop，这里有一个例子：【BELLHOP冲激响应计算】 https://gitee.com/open-ocean/underwater-acoustic-communication/tree/master/ArrivalStructure"
+    },
+    {
+        "instruction": "计算海洋声学的电子书在哪找？",
+        "input": "",
+        "output": "【计算海洋声学的电子书】 https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf"
+    },
+    {
+        "instruction": "bellhop3d有教程吗？",
+        "input": "",
+        "output": "【13Bellhop3D入门】 https://www.bilibili.com/video/BV1Gg4y1X7TK/?share_source=copy_web"
+    },
+    {
+        "instruction": "bellhop3d有什么资料吗？",
+        "input": "",
+        "output": "推荐公众号“难得加油”的文章【Bellhop 3D的.env文件】 https://mp.weixin.qq.com/s/kM18hOexEWHMm7b1FaNjuA "
+    },
+    {
+        "instruction": "fortran是软件吗？",
+        "input": "",
+        "output": "fortran是一门编程语言，如果需要学习可以看看Fortran coder的教程，【Fortran coder】http://fcode.cn/"
+    },
+    {
+        "instruction": "Bellhop3D是什么？",
+        "input": "",
+        "output": "Bellhop3D 是一个用于水声传播建模和仿真的软件工具，它是 Bellhop 的一个扩展版本，专门用于进行三维水声传播的建模和仿真。"
+    },
+    {
+        "instruction": "Bellhop3D能用来做什么？",
+        "input": "",
+        "output": "Bellhop3D 能够模拟水声信号在三维水域中的传播，考虑到水声通道的各种影响因素，例如海洋地形、底质、海水声速剖面等。"
+    },
+    {
+        "instruction": "有Bellhop3D的资料和教程吗？",
+        "input": "",
+        "output": "【13Bellhop3D入门】 https://www.bilibili.com/video/BV1Gg4y1X7TK/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "kraken做线列阵时域波形的仿真，如何改变声源方位角？",
+        "input": "",
+        "output": "kraken是声学工具箱中的简正波模型，通过建立三维关系，可以根据方位角计算声源和接收器的距离，进而仿真线阵的接收信号，代码链接如下：【基于kraken的浅海3维定位仿真】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/ShallowWaterSource3D(DirectionRangeDepth)LocaliztionSimulationProgram.zip。"
+    },
+    {
+        "instruction": "kraken做线列阵时域波形的仿真有教程吗？",
+        "input": "",
+        "output": "【基于kraken的浅海3维定位仿真】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/ShallowWaterSource3D(DirectionRangeDepth)LocaliztionSimulationProgram.zip。"
+    },
+    {
+        "instruction": "有没有关于bellhop设置海面海底反射系数文件这部分的参考资料",
+        "input": "",
+        "output": "【海面海底反射系数】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/CalculationReflectionCoefficientofMulti-layerSeabedMaterial。"
+    },
+    {
+        "instruction": "采用bellhop工具时设置SD个数为两个，仿真结果里怎么只画出一个声源呢？",
+        "input": "",
+        "output": "默认的plotshd画传播损失只能画第一个声源的传播损失，如果要把所有声源的传播损失都绘制出来，首先要把两个声源的声压进行相干或者非相干叠加，然后计算传播损失并绘图。"
+    },
+    {
+        "instruction": "多声源声场如何仿真？",
+        "input": "",
+        "output": "【05.BELLHOP求解多个声源的叠加声场】 https://www.bilibili.com/video/BV12w411F7j3/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "用bellhop可以做水下声源定位嘛？",
+        "input": "",
+        "output": "可以，声学工具箱的常用的三种模型（简正波模型KRAKEN、射线模型BELLHOP和抛物方程模型RAM）应用在不同的环境计算声场，可以用来做水下声源定位。"
+    },
+    {
+        "instruction": "bellhop声速剖面如何设置？给定经纬度点能得到声速剖面吗？",
+        "input": "",
+        "output": "不同的海域，不同的季节、时间，声剖面都是不一样的，可以通过woa18的数据库读取水温数据根据经验公式转化为声速剖面，【02BELLHOP声场计算APP】 https://www.bilibili.com/video/BV1Qw411E7Y5/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2。"
+    },
+    {
+        "instruction": "声学工具箱的官方网站在哪？",
+        "input": "",
+        "output": "【Acoustics Toolbox网址】 http://oalib.hlsresearch.com/AcousticsToolbox/。"
+    },
+    {
+        "instruction": "请问kraken程序的输入和输出文件是什么？",
+        "input": "",
+        "output": "kraken程序的输入是.env文件和.flp文件，输出是.mod文件、.shd文件和.prt文件。您可以通过https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/AcousticToolbox/handbook来学习更多关于kraken程序的使用方法。"
+    },
+    {
+        "instruction": "声学工具箱的手册在哪里找？",
+        "input": "",
+        "output": "【声学工具箱手册】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/AcousticToolbox/handbook"
+    },
+    {
+        "instruction": "kraken如何计算宽带声场？",
+        "input": "",
+        "output": "kraken可以配置宽带环境文件【kraken宽带环境文件】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/atWin10_2020_11_4/tests/usr/MunkK_BB.env。"
+    },
+    {
+        "instruction": "有冰-水界面的bellhop的环境文件.env的例子吗？",
+        "input": "",
+        "output": "【冰-水界面环境文件】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/atWin10_2020_11_4/tests/TLslices/ice.env，\n使用代码\nkraken ice\nplotshd ice.shd\n运行它。"
+    },
+    {
+        "instruction": "如何学习bellhop的使用？",
+        "input": "",
+        "output": "可以参考教程【Bellhop 从入门到上手】 https://blog.csdn.net/qq_41839588/article/details/130955558 "
+    },
+    {
+        "instruction": "学习bellhop有什么推荐的书嘛？",
+        "input": "",
+        "output": "可以参考《海洋声学典型声场模型的原理及应用》这本书。"
+    },
+    {
+        "instruction": "如何学习声学工具箱的使用？",
+        "input": "",
+        "output": "参考视频教程【声学工具箱学习2020-11版本】 https://www.bilibili.com/video/BV12W4y1Q7pQ/?share_source=copy_web。"
+    },
+    {
+        "instruction": "bellhop如何加入距离相关的声速剖面？",
+        "input": "",
+        "output": "可以参考教程【Bellhop-二维海水声速环境下的声线仿真】 https://blog.csdn.net/Xujing1143/article/details/123512778"
+    },
+    {
+        "instruction": "在哪里下载声学工具箱？",
+        "input": "",
+        "output": "【声学工具箱的官方网址】 http://oalib.hlsresearch.com/AcousticsToolbox/"
+    },
+    {
+        "instruction": "声学工具箱国内镜像在哪下载？",
+        "input": "",
+        "output": "【声学工具箱的gitee镜像】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/atWin10_2020_11_4.zip"
+    },
+    {
+        "instruction": "《Computational Ocean Acoustics》pdf版在哪下载？",
+        "input": "",
+        "output": "【《Computational Ocean Acoustics》pdf】https://gitee.com/open-ocean/eBook/blob/master/book/2011_Book_ComputationalOceanAcoustics.pdf"
+    },
+    {
+        "instruction": "KRAKEN怎样仿真水听器接收到的时域波形？",
+        "input": "",
+        "output": "参考《Computational Ocean Acoustics》，使用KRAKEN仿真得到格林函数pressure，即声场，根据宽带频域上的声场反傅里叶变换得到时域宽带海洋声信道，并与信号卷积得到水听器接收到的时域波形。代码：https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/ArrayTime-domainWaveformSignalSimulation/SonarReceivedSignalSImulatedbyKRAKEN"
+    },
+    {
+        "instruction": "KRAKEN仿真水听器接收到的时域波形有参考代码吗？",
+        "input": "",
+        "output": "【KRAKEN仿真水听器接收到的时域波形】https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/ArrayTime-domainWaveformSignalSimulation/SonarReceivedSignalSImulatedbyKRAKEN"
+    },
+    {
+        "instruction": "请问一下bellhop的声源俯仰角设置正角度代表什么方向？",
+        "input": "",
+        "output": "正角度为向深（或者向下）方向的声线。"
+    },
+    {
+        "instruction": "目前的声速梯度数据主要从哪些地方获取，这些数据是实测数据还是说数值预报得到的？",
+        "input": "",
+        "output": "NOAA(美国国家海洋和大气管理局)、WOD (世界海洋数据库)以及WHIO(伍兹霍尔海洋研究所)、国内的极地数据中心提供了使用温盐深仪(CTD)的实测数据，包含深度、温度和盐度。"
+    },
+    {
+        "instruction": "如何将温盐深数据转化为声速剖面数据？",
+        "input": "",
+        "output": "声学工具箱的声速经验公式可以将温盐深数据转化为声速剖面数据，【声速经验公式代码】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/atWin10_2020_11_4/Matlab/soundspeed.m"
+    },
+    {
+        "instruction": "Ram是如何做阵列接收信号仿真？",
+        "input": "",
+        "output": "Ram可以通过宽带傅里叶合成方法仿真阵列接收信号，可以参考kraken仿真阵列接收信号 https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/ArrayTime-domainWaveformSignalSimulation/SonarReceivedSignalSImulatedbyKRAKEN"
+    },
+    {
+        "instruction": "主动声纳回波的comsol模型有示例吗？",
+        "input": "",
+        "output": "要是想研究某个物体的回波，需要建物体的几何模型，研究物体在时域模型下的压力变化波形。 【换能器阵列建模】https://cn.comsol.com/model/tonpilz-transducer-array-for-sonar-systems-55891 【换能器阵列的声场特性】https://cn.comsol.com/blogs/studying-sonar-systems-component-level。"
+    },
+    {
+        "instruction": "请问除了Hamilton对海底沉积层做的分类，还有没有沉积层分类方法？",
+        "input": "",
+        "output": "底质类型可以按照谢泼德分类法划分，比如谢泼德分类法 https://www.docin.com/touch_new/preview_new.do?id=940843897"
+    },
+    {
+        "instruction": "Kraken,bellhop,ram如何在linux下运行？",
+        "input": "",
+        "output": "首先应当在linux系统下编译声学工具箱，编译完成后linux运行其他可执行文件一样使用\n./kraken.exe MunkK\n的方式调用运行MunkK。请看这个视频【Acoustic Toolbox Linux 编译】 https://www.bilibili.com/video/BV1944y1F7nN/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "怎么在linux环境下的gpu上跑bellhop",
+        "input": "",
+        "output": "linux编译教程：【BELLHOP-CUDA LINUX系统编译】 https://www.bilibili.com/video/BV1pN411r7rc/?share_source=copy_web "
+    },
+    {
+        "instruction": "怎么在windows环境下的gpu上跑bellhop",
+        "input": "",
+        "output": "【BELLHOP-CUDA WINDOWS系统编译】： https://gitee.com/open-ocean/eBook/blob/master/book/%E5%9F%BA%E4%BA%8Ewindows%E7%B3%BB%E7%BB%9F%E7%9A%84bellhopcuda-main%20%E7%BC%96%E8%AF%91(1).docx "
+    },
+    {
+        "instruction": "波束形成的相关资料有吗？",
+        "input": "",
+        "output": "【基于kraken的浅海3维定位仿真】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/ShallowWaterSource3D(DirectionRangeDepth)LocaliztionSimulationProgram.zip"
+    },
+    {
+        "instruction": "典型深海Munk剖面参数是什么？",
+        "input": "",
+        "output": "在声学工具箱的Munk.m给出了典型深海Munk剖面公式【典型深海Munk剖面代码】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/atWin10_2020_11_4/Matlab/Bellhop/Munk.m "
+    },
+    {
+        "instruction": "低频浅海用belhop会不会被质疑精确度？",
+        "input": "",
+        "output": "一般来说f>10*c/H为射线模型使用频率范围，其中c为声速，可以带入水中常用声速1500m/s，H为海深，当频率f大于10*c/H，能保证bellhop计算声场的精确度。"
+    },
+    {
+        "instruction": "kraken的.flp文件 1!声速剖面个数\n0.0 100.0 /!RPROF(1:NPROF)(km)剖面范围0.0 100.0代表什么意思",
+        "input": "",
+        "output": "一般用简正波的耦合方式用的设置，代表多远之后换一个环境剖面（声速剖面、海深等），计算距离变化条件下的声场，在这个例子中意思是0-100km内适用于第一个环境剖面。"
+    },
+    {
+        "instruction": "bellhop的源码在哪里可以看？",
+        "input": "",
+        "output": "bellhop的源码在声学工具箱的bellhop和misc文件夹中找到，我也把它放到了这个网址上 https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/bellhopfund.zip 。可以使用vscode使用文本方式打开，文本打开可以直接看，如果想在vscode里面改的话可以安装个modern fortran；或者用visual studio，加一个one API和HPC可以进行编译。你可以在linux系统里直接修改，然后用命令make重新生成.exe。"
+    },
+    {
+        "instruction": "bellhop的源码如何编译？",
+        "input": "",
+        "output": "【bellhop的源码】https://gitee.com/open-ocean/SourceLocalization-qianpeng/blob/master/AcousticToolbox/bellhopfund.zip 在windows下使用cmake工具编译。"
+    },
+    {
+        "instruction": "怎么使用matlab的并行调用声场计算模型？",
+        "input": "",
+        "output": "matlab的parfor可以多线程调用exe，请看这个链接：【09MATLAB并行调用声学工具箱】 https://www.bilibili.com/video/BV1Le411f7VC/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "傅里叶合成法得到接收信号要注意什么？",
+        "input": "",
+        "output": "声场的计算频率间隔为df决定了输出信号的长度T=1/df，网址链接： 【到达结构傅里叶合成法得到接收信号】https://gitee.com/open-ocean/underwater-acoustic-communication/tree/master/ArrivalStructure"
+    },
+    {
+        "instruction": "kraken计算的频率响应和bellhop计算得到的会完全一样吗",
+        "input": "",
+        "output": "由于简正波算法和射线算法的原理不同，它们计算出的声场是有差别的，简正波模型更适用于低频浅海，而射线更适用于高频深海。"
+    },
+    {
+        "instruction": "不同模型之间的互相传播损失如何验证？",
+        "input": "",
+        "output": "参考【08BELLHOP传播损失验证】 https://www.bilibili.com/video/BV1bu4y1P7mR/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "使用bellhop计算一片海域的声场，应该取一个点的声速来算还是把一个区域的深度声速对取均值来算呢？",
+        "input": "",
+        "output": "把一个区域的深度声速对取均值可能更加准确，另外，也设置一个二维声速剖面.ssp来获得更准确的仿真。"
+    },
+    {
+        "instruction": "有 linux 可用的声场模型吗？",
+        "input": "",
+        "output": "参考这个视频【Acoustic Toolbox Linux 编译】 https://www.bilibili.com/video/BV1944y1F7nN/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "有没有深海水声通信的文章？",
+        "input": "",
+        "output": " 哈工程的周峰老师的团队研究深海的垂直通信；浙大的瞿逢重老师有基于泥浆为介质（环境可能在水底或者海底）的通信的相关研究。【Milica Stojanovic - Projects】 http://millitsa.coe.neu.edu/projects.html 这个网址有Milica Stojanovic 几个项目和文章的介绍，附有代码。"
+    },
+    {
+        "instruction": "有没有深海水声通信的项目代码？",
+        "input": "",
+        "output": " 【Milica Stojanovic - Projects】 http://millitsa.coe.neu.edu/projects.html 这个网址有Milica Stojanovic 的项目和文章的介绍，附有代码。"
+    },
+    {
+        "instruction": "如何快速查找深海水声通信的文章？",
+        "input": "",
+        "output": " 您可以查看一篇经典深海水声通信文章的引用和被引应该快速找到更多类似文章。"
+    },
+    {
+        "instruction": "有.trc和.brc输入的范例吗？",
+        "input": "",
+        "output": "【.trc和.brc输入的范例】 https://gitee.com/open-ocean/SourceLocalization-qianpeng/tree/master/CalculationReflectionCoefficientofMulti-layerSeabedMaterial"
+    },
+    {
+        "instruction": ".trc和.brc输入参数代表什么意义？",
+        "input": "",
+        "output": "由于bellhop无法计算分层海底，.*rc描述的是整个海底/海面边界，对于不同入射角度的声线的反射系数和相位。输入的参数theta、r、phi分别是入射角度、反射系数幅度和反射相位（°）。"
+    },
+    {
+        "instruction": "同样的距离无关波导条件下KRAKEN和RAM计算的结果差很多正常吗？",
+        "input": "",
+        "output": "一般来说KRAKEN和RAM计算的结果相差不大，和RAM作比较时，需要注意的是，在最底层需要加一层海底吸收层，以模拟半无限空间。"
+    },
+    {
+        "instruction": "请问bellhop中如何设置偶极子？",
+        "input": "",
+        "output": "计算出偶极子的指向性图像|cos0|，并写入.sbp文件，代入bellhop计算即可。"
+    },
+    {
+        "instruction": "偶极子声源的叠加声场如何仿真？",
+        "input": "",
+        "output": "多声源的声场叠加可以看这个视频【05.BELLHOP求解多个声源的叠加声场】 https://www.bilibili.com/video/BV12w411F7j3/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2。"
+    },
+    {
+        "instruction": "声纳接收信号仿真的步骤是？",
+        "input": "",
+        "output": "进行接收信号仿真的步骤是设计信号源、水声信道建模和卷积信道、加入环境噪声。"
+    },
+    {
+        "instruction": "如何设计信号源？",
+        "input": "",
+        "output": "设计信号源：选择合适的信号源，如CW、LFM、HFM等。\n发射信号：确定信号的特性（频率、幅度、调制方式等）。"
+    },
+    {
+        "instruction": "水声信道受什么因素影响？",
+        "input": "",
+        "output": "水声信道受水域环境（海水声速、海底地形、底质等）、声源、接收深度、声源频率等因素的影响，导致信号在传播过程中发生衰减、多径效应等。"
+    },
+    {
+        "instruction": "如何进行水声信道建模？",
+        "input": "",
+        "output": "选择适当的水声信道模型，例如BELLHOP（射线追踪模型，适用于高频深海，水平变化或者不变环境）、KRAKEN（简正波模型，适用于低频浅海，水平不变环境）、RAM（抛物方程模型，适用于低频浅海，水平变化或者不变环境）。"
+    },
+    {
+        "instruction": "如何根据水声信道计算接收信号？",
+        "input": "",
+        "output": "将发射信号和水声信道计算的多径效应结合，使用时域卷积、频域相乘或者时延法得到不同位置的接收信号。\n具体公式如下 y(t) = x(t) * h(t)，其中 y(t) 为接收信号，x(t) 为发射信号，h(t) 为水声信道的冲激响应，*为卷积符号。"
+    },
+    {
+        "instruction": "根据水声信道计算接收信号有教程吗？",
+        "input": "",
+        "output": "视频链接【11时延法实现到达结构输出信号】 https://www.bilibili.com/video/BV1DK41147eE/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2。\n\n加入环境噪声：对卷积后得到的信号加入高斯白噪声或者海洋有色噪声，视频链接：【06 如何给水声信号添加不同信噪比的噪声】 https://www.bilibili.com/video/BV1ub4y1g7aD/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    },
+    {
+        "instruction": "如何对信号加入噪声？",
+        "input": "",
+        "output": "对信号加入高斯白噪声或者海洋有色噪声视频链接：【06 如何给水声信号添加不同信噪比的噪声】 https://www.bilibili.com/video/BV1ub4y1g7aD/?share_source=copy_web&vd_source=da3bd6e68ced42ab3b6a4778db8cb6d2"
+    }
+]

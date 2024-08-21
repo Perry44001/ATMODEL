@@ -1,0 +1,26 @@
+{
+    "data0814": {
+        "file_name": "data0814.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "identity": {
+        "file_name": "identity.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "Oridata0814": {
+        "file_name": "Oridata0814.json",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    }
+}

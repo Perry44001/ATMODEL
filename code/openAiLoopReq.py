@@ -4,6 +4,7 @@ import re
 import sys
 import logging
 from datetime import datetime
+import time
 
 # 获取当前日期和时间
 now = datetime.now()
@@ -80,7 +81,7 @@ def generate_gpt_responses(input_file_path, output_file_path, j):
                                     "output": "模型回答（必填）"
                                 }
                                 ]
-                                请利用以下数据扩充这个数据集，改变用户指令和模型回答：
+                                请利用以下数据扩充这个数据集，改变用户指令和模型回答，在扩充数据集中，不要出现换行，使用换行符\\n代替：
                                 '''+'{"instruction":"' + instruction_texts[i] + '","input":""' + input_texts[i] 
                                 + ',"output":"' + output_texts[i] + '"}'},
                             # {
@@ -106,7 +107,7 @@ def generate_gpt_responses(input_file_path, output_file_path, j):
                                     "output": "模型回答（必填）"
                                 }
                                 ]
-                                请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别：
+                                请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：
                                 '''+'{"instruction":"' + instruction_texts[i] + '","input":""' + input_texts[i] 
                                 + ',"output":"' + output_texts[i] + '"}'},]
                         # "temperature": 0.8,
@@ -117,6 +118,8 @@ def generate_gpt_responses(input_file_path, output_file_path, j):
                     }
                 print("message:\n", data)
                 printlog("message:\n", data)
+                
+                time.sleep(10) # 防止频繁请求，延迟10秒
                 response = requests.post(url, headers=headers, json=data)
                 
                 output = response.json()['choices'][0]['message']['content'].strip()

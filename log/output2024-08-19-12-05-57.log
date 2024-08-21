@@ -1,0 +1,113 @@
+2024-08-19 12:05:57,670 - INFO - cmd: python .\openAiLp.py -i E:\ATCHATGROOP\ATMODEL\data\reLen\UA_N.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reLenKC\UA_N_V1.json
+2024-08-19 12:05:57,671 - INFO - 
+
+Generating data for input 1.7% 1/59
+2024-08-19 12:05:57,672 - INFO - ----- standard request -----
+2024-08-19 12:05:57,673 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，在扩充数据集中，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:06:07,695 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36C050>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:06:07,696 - INFO - 
+response:
+ 
+2024-08-19 12:06:07,698 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:06:17,703 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36C740>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:06:17,705 - INFO - 
+response:
+ 
+2024-08-19 12:06:17,707 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:06:27,712 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033CC07110>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:06:27,713 - INFO - 
+response:
+ 
+2024-08-19 12:06:27,716 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:06:37,722 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36C1A0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:06:37,723 - INFO - 
+response:
+ 
+2024-08-19 12:06:37,725 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:06:47,743 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36CE00>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:06:47,743 - INFO - 
+response:
+ 
+2024-08-19 12:06:47,745 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:06:57,751 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36D4C0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:06:57,753 - INFO - 
+response:
+ 
+2024-08-19 12:06:57,756 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:07:07,758 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36DC40>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:07:07,759 - INFO - 
+response:
+ 
+2024-08-19 12:07:07,760 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:07:17,764 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36E3F0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:07:17,766 - INFO - 
+response:
+ 
+2024-08-19 12:07:17,768 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:07:27,774 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D343FE0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:07:27,775 - INFO - 
+response:
+ 
+2024-08-19 12:07:27,778 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"如何改善水声信号的传播质量？","input":"","output":"优化声源和接收器的设计、改善声波传播路径、降低水下噪音干扰、采用信号处理技术等."}'}]}
+2024-08-19 12:07:37,800 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36E060>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:07:37,802 - INFO - 
+response:
+ 
+2024-08-19 12:07:37,804 - INFO - 
+
+Generating data for input 3.4% 2/59
+2024-08-19 12:07:37,804 - INFO - ----- standard request -----
+2024-08-19 12:07:37,806 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，在扩充数据集中，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:07:47,811 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36D6A0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:07:47,812 - INFO - 
+response:
+ 
+2024-08-19 12:07:47,815 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:07:57,820 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36C650>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:07:57,821 - INFO - 
+response:
+ 
+2024-08-19 12:07:57,824 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:08:07,829 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36C980>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:08:07,831 - INFO - 
+response:
+ 
+2024-08-19 12:08:07,834 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:08:17,839 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36ECC0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:08:17,842 - INFO - 
+response:
+ 
+2024-08-19 12:08:17,846 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:08:27,864 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D3438F0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:08:27,866 - INFO - 
+response:
+ 
+2024-08-19 12:08:27,868 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:08:37,874 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36EA80>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:08:37,875 - INFO - 
+response:
+ 
+2024-08-19 12:08:37,878 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}
+2024-08-19 12:08:47,881 - INFO - HTTPSConnectionPool(host='apikeyplus.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002033D36C7D0>: Failed to resolve 'apikeyplus.com' ([Errno 11001] getaddrinfo failed)"))
+2024-08-19 12:08:47,882 - INFO - 
+response:
+ 
+2024-08-19 12:08:47,884 - INFO - message:
+ {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': '我要构建一个业务数据集，用于大模型微调，格式如下：\n                            [\n                            {\n                                "instruction": "用户指令（必填）",\n                                "output": "模型回答（必填）"\n                            }\n                            ]\n                            请利用以下数据扩充这个数据集，改变用户指令和模型回答，请与上文回答有所区别，不要出现换行，使用换行符\\n代替：\n                            {"instruction":"水声信号有哪些主要的应用？","input":"","output":"水声信号在水声通信、声纳探测识别、海洋资源勘探、海洋环境监测、水下导航和定位等方面有着广泛的应用."}'}]}

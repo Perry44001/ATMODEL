@@ -1,0 +1,1 @@
+2024-08-18 23:14:28,951 - INFO - cmd: python .\openAiLoopReq.py -i E:\ATCHATGROOP\ATMODEL\data\reLen\UA_H.json -o E:\ATCHATGROOP\ATMODEL\kcdata\reLenKC\UA_H_V1.json
