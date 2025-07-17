@@ -6,7 +6,7 @@ url = "https://apikeyplus.com/v1/chat/completions"
 headers = {
   'Content-Type': 'application/json',
   # 填写 OpenKEY 生成的令牌/KEY，注意前面的 Bearer 要保留，并且和 KEY 中间有一个空格。
-  'Authorization': 'Bearer sk-kY0d4xy7dIz52GZY6bD1C6D9A380412398Cb924cCc14Af52'
+  'Authorization': 'B**'
 }
 
 
