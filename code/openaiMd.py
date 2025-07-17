@@ -6,7 +6,7 @@ import sys
 
 # gets API Key from environment variable OPENAI_API_KEY
 OpenAI.api_base = "https://apikeyplus.com/" # 换成代理，一定要加 v1
-client = OpenAI(api_key = "sk-kY0d4xy7dIz52GZY6bD1C6D9A380412398Cb924cCc14Af52")
+client = OpenAI(api_key = "s**")
 
 def generate_gpt_responses(input_file_path, output_file_path, j):
     try:
