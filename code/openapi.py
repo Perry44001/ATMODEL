@@ -3,7 +3,7 @@ import json
 import os
 
 # 设置OpenAI API密钥
-openai.api_key = 'sk-Z9M8Dbc7y16Ts04M195a61295888440d9d4311125a8eE107'
+openai.api_key = 's**'
 
 # 读取已有的数据集
 input_file_path = 'E:/ATCHATGROOP/ATMODEL/data/xxu.json'
